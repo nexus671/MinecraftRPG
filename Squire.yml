@@ -1,6 +1,6 @@
 Squire:
   name: 'Squire'
-  prefix: '&6Class 1'
+  prefix: '&6Squire'
   group: 'class'
   mana: '&2Mana'
   max-level: 40
