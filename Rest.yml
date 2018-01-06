@@ -1,6 +1,6 @@
 Rest:
   name: 'Rest'
-  type: 'Dynamic'
+  type: 'Healing'
   max-level: 3
   skill-req: ''
   skill-req-lvl: 1
