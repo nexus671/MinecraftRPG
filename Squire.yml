@@ -24,12 +24,12 @@ Squire:
     mana-base: 20
     mana-scale: 0
     vitality-base: 10
-    vitality-scale: .5
+    vitality-scale: 0.5
     spirit-base: 6
     spirit-scale: 1
     intelligence-base: 5
-    intelligence-scale: .5
+    intelligence-scale: 0.5
     dexterity-base: 5
-    dexterity-scale: .20
+    dexterity-scale: 0.2
     strength-base: 6
     strength-scale: 1
