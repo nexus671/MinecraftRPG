@@ -3,7 +3,7 @@ Squire:
   name: 'Squire'
   prefix: '&6Squire'
   group: 'class'
-  mana: '&2Mana'
+  mana: '&2Energy'
   max-level: 40
   parent: ''
   needs-permission: 'False'
@@ -36,11 +36,11 @@ Squire:
     dexterity-scale: 0.2
     strength-base: 6
     strength-scale: 1
-Class 1:
-  name: 'Class 1'
-  prefix: '&6Class 1'
+Hunter:
+  name: 'Hunter'
+  prefix: '&6Hunter'
   group: 'class'
-  mana: '&2Mana'
+  mana: '&2Focus'
   max-level: 40
   parent: ''
   needs-permission: 'False'
@@ -48,11 +48,11 @@ Class 1:
   mana-regen: 1
   tree: 'Requirement'
   skills:
-  - ''
-  icon: 'Jack O Lantern'
+  - 'Call Wolf'
+  icon: 'Bow'
   icon-data: 0
   icon-lore:
-  - '&dClass 1'
+  - '&dHunter'
   blacklist:
   - ''
   action-bar: ''
@@ -61,13 +61,13 @@ Class 1:
     health-scale: 0
     mana-base: 20
     mana-scale: 0
-    vitality-base: 0
-    vitality-scale: 0
-    spirit-base: 0
-    spirit-scale: 0
-    intelligence-base: 0
-    intelligence-scale: 0
-    dexterity-base: 0
-    dexterity-scale: 0
-    strength-base: 0
-    strength-scale: 0
+    vitality-base: 7
+    vitality-scale: .5
+    spirit-base: 6
+    spirit-scale: 1
+    intelligence-base: 6
+    intelligence-scale: .5
+    dexterity-base: 7
+    dexterity-scale: 1
+    strength-base: 6
+    strength-scale: .5
