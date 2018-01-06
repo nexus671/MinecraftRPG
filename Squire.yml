@@ -10,7 +10,7 @@ Squire:
   mana-regen: 1
   tree: 'Requirement'
   skills:
-  - ''
+  - 'Fight Me!'
   icon: 'Flint'
   icon-data: 0
   icon-lore:
