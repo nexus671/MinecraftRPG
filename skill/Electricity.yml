@@ -20,7 +20,7 @@ Electricity:
   - '&2Cooldown: {attr:cooldown}'
   - ''
   - 'This skill buffs the player'
-  - 'Uses five redstone to cast'
+  - '&cRedstone Cost: {attr:redstone.amount}'
   attributes:
     level-base: 1
     level-scale: 0
@@ -48,7 +48,7 @@ Electricity:
             Inventory-c:
               type: 'condition'
               data:
-                icon-key: ''
+                icon-key: 'redstone'
                 amount-base: 5
                 amount-scale: 1
                 check-mat: 'True'
