@@ -21,8 +21,8 @@ Grounded:
   attributes:
     level-base: 10
     level-scale: 0
-    cost-base: 5
-    cost-scale: 3
+    cost-base: 3
+    cost-scale: 1
     cooldown-base: 0
     cooldown-scale: 0
     mana-base: 0
@@ -38,6 +38,72 @@ Grounded:
         icon-key: ''
         mana: 'False'
         cooldown: 'False'
+        type: 'Start Crouching'
+      children:
+        Self-b:
+          type: 'target'
+          data:
+            icon-key: ''
+          children:
+            Crouch-c:
+              type: 'condition'
+              data:
+                icon-key: ''
+                crouch: 'True'
+              children:
+                Water-d:
+                  type: 'condition'
+                  data:
+                    icon-key: ''
+                    state: 'In Water'
+                  children:
+                    Damage-e:
+                      type: 'mechanic'
+                      data:
+                        icon-key: ''
+                        counts: 'False'
+                        type: 'Damage'
+                        value-base: 2
+                        value-scale: 
+                        true: 'True'
+                        classifier: 'default'
+                Water-f:
+                  type: 'condition'
+                  data:
+                    icon-key: ''
+                    state: 'Out Of Water'
+                  children:
+                    Potion-g:
+                      type: 'mechanic'
+                      data:
+                        icon-key: ''
+                        counts: 'True'
+                        potion: 'Damage Resistance'
+                        ambient: 'False'
+                        tier-base: 1
+                        tier-scale: 0
+                        seconds-base: 100000000000
+                        seconds-scale: 0
+            Trigger-h:
+              type: 'mechanic'
+              data:
+                icon-key: ''
+                counts: 'True'
+                trigger: 'Crouch'
+                duration-base: 999999999999999
+                duration-scale: 0
+                stackable: 'True'
+                once: 'True'
+                type: 'Stop Crouching'
+              children:
+                Purge-i:
+                  type: 'mechanic'
+                  data:
+                    icon-key: ''
+                    counts: 'True'
+                    potion: 'Damage Resistance'
+                    status: ''
+
         type: 'Start Crouching'
       children:
         Self-b:
