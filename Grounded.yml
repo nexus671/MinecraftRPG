@@ -1,0 +1,105 @@
+Grounded:
+  name: 'Grounded'
+  type: 'Passive'
+  max-level: 5
+  skill-req: ''
+  skill-req-lvl: 1
+  needs-permission: 'False'
+  msg: '&6{player} &6has been &eGrounded!'
+  combo: ''
+  indicator: '2D'
+  icon: 'Lever'
+  icon-data: 0
+  icon-lore:
+  - '&d{name} &7({level}/{max})'
+  - '&2Type: &6{type}'
+  - ''
+  - '{req:level}Level: {attr:level}'
+  - '{req:cost}Cost: {attr:cost}'
+  - ''
+  - 'This skill gives you resistance when crouched.'
+  attributes:
+    level-base: 10
+    level-scale: 0
+    cost-base: 5
+    cost-scale: 3
+    cooldown-base: 0
+    cooldown-scale: 0
+    mana-base: 0
+    mana-scale: 0
+    points-spent-req-base: 0
+    points-spent-req-scale: 0
+    incompatible:
+    - ''
+  components:
+    Crouch-a:
+      type: 'trigger'
+      data:
+        icon-key: ''
+        mana: 'False'
+        cooldown: 'False'
+        type: 'Start Crouching'
+      children:
+        Self-b:
+          type: 'target'
+          data:
+            icon-key: ''
+          children:
+            Crouch-c:
+              type: 'condition'
+              data:
+                icon-key: ''
+                crouch: 'True'
+              children:
+                Water-d:
+                  type: 'condition'
+                  data:
+                    icon-key: ''
+                    state: 'In Water'
+                  children:
+                    Damage-e:
+                      type: 'mechanic'
+                      data:
+                        icon-key: ''
+                        counts: 'False'
+                        type: 'Damage'
+                        value-base: 2
+                        value-scale: 
+                        true: 'True'
+                        classifier: 'default'
+                Water-f:
+                  type: 'condition'
+                  data:
+                    icon-key: ''
+                    state: 'Out Of Water'
+                  children:
+                    Potion-g:
+                      type: 'mechanic'
+                      data:
+                        icon-key: ''
+                        counts: 'True'
+                        potion: 'Damage Resistance'
+                        ambient: 'False'
+                        tier-base: 1
+                        tier-scale: 0
+                        seconds-base: 100000000000
+                        seconds-scale: 0
+            Trigger-h:
+              type: 'mechanic'
+              data:
+                icon-key: ''
+                counts: 'True'
+                trigger: 'Crouch'
+                duration-base: 999999999999999
+                duration-scale: 0
+                stackable: 'True'
+                once: 'False'
+                type: 'Stop Crouching'
+              children:
+                Purge-i:
+                  type: 'mechanic'
+                  data:
+                    icon-key: ''
+                    counts: 'True'
+                    potion: 'Damage Resistance'
+                    status: ''
