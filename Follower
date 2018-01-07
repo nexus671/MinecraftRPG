@@ -1,6 +1,6 @@
 Follower:
   name: 'Follower'
-  prefix: '&6Class 1'
+  prefix: '&dFollower'
   group: 'class'
   mana: '&2Mana'
   max-level: 30
@@ -15,7 +15,7 @@ Follower:
   icon: 'Iron Nugget'
   icon-data: 0
   icon-lore:
-  - '&dClass 1'
+  - '&dFollow'
   blacklist:
   - ''
   action-bar: ''
