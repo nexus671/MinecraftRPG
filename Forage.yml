@@ -1,0 +1,185 @@
+Forage:
+  name: 'Forage'
+  type: 'Dynamic'
+  max-level: 3
+  skill-req: ''
+  skill-req-lvl: 0
+  needs-permission: 'False'
+  msg: '&6{player} &2has cast &6{skill}'
+  combo: ''
+  indicator: '2D'
+  icon: 'Apple'
+  icon-data: 0
+  icon-lore:
+  - '&d{name} &7({level}/{max})'
+  - '&2Type: &6{type}'
+  - ''
+  - 'Forage for food'
+  - ''
+  - '{req:level}Level: {attr:level}'
+  - '{req:cost}Cost: {attr:cost}'
+  - ''
+  - '&2Mana: {attr:mana}'
+  - '&2Cooldown: {attr:cooldown}'
+  attributes:
+    level-base: 3
+    level-scale: 0
+    cost-base: 1
+    cost-scale: 0
+    cooldown-base: 40
+    cooldown-scale: -6
+    mana-base: 10
+    mana-scale: 0
+    points-spent-req-base: 0
+    points-spent-req-scale: 0
+    incompatible:
+    - ''
+  components:
+    Cast-a:
+      type: 'trigger'
+      data:
+        icon-key: ''
+      children:
+        Value Random-b:
+          type: 'mechanic'
+          data:
+            icon-key: ''
+            counts: 'True'
+            key: 'randomFood'
+            type: 'Normal'
+            min-base: 0
+            min-scale: 0
+            max-base: 5
+            max-scale: 0
+        Water-c:
+          type: 'condition'
+          data:
+            icon-key: ''
+            state: 'In Water'
+          children:
+            Value-d:
+              type: 'condition'
+              data:
+                icon-key: ''
+                key: 'randomFood'
+                min-value-base: 0
+                min-value-scale: 0
+                max-value-base: 1
+                max-value-scale: 0
+              children:
+                Item-e:
+                  type: 'mechanic'
+                  data:
+                    icon-key: ''
+                    counts: 'True'
+                    material: 'Raw Fish'
+                    amount: 1
+                    data: 0
+                    byte: 0
+                    custom: 'False'
+            Value-f:
+              type: 'condition'
+              data:
+                icon-key: ''
+                key: 'randomFood'
+                min-value-base: 1
+                min-value-scale: 0
+                max-value-base: 2
+                max-value-scale: 0
+              children:
+                Item-g:
+                  type: 'mechanic'
+                  data:
+                    icon-key: ''
+                    counts: 'True'
+                    material: 'Raw Fish'
+                    amount: 1
+                    data: 0
+                    byte: 1
+                    custom: 'False'
+            Value-h:
+              type: 'condition'
+              data:
+                icon-key: ''
+                key: 'randomFood'
+                min-value-base: 2
+                min-value-scale: 0
+                max-value-base: 3
+                max-value-scale: 0
+              children:
+                Item-i:
+                  type: 'mechanic'
+                  data:
+                    icon-key: ''
+                    counts: 'True'
+                    material: 'Raw Fish'
+                    amount: 1
+                    data: 0
+                    byte: 2
+                    custom: 'False'
+        Water-j:
+          type: 'condition'
+          data:
+            icon-key: ''
+            state: 'Out Of Water'
+          children:
+            Value-k:
+              type: 'condition'
+              data:
+                icon-key: ''
+                key: 'randomFood'
+                min-value-base: 0
+                min-value-scale: 0
+                max-value-base: 1
+                max-value-scale: 0
+              children:
+                Item-l:
+                  type: 'mechanic'
+                  data:
+                    icon-key: ''
+                    counts: 'True'
+                    material: 'Apple'
+                    amount: 1
+                    data: 0
+                    byte: 0
+                    custom: 'False'
+            Value-m:
+              type: 'condition'
+              data:
+                icon-key: ''
+                key: 'randomFood'
+                min-value-base: 1
+                min-value-scale: 0
+                max-value-base: 2
+                max-value-scale: 0
+              children:
+                Item-n:
+                  type: 'mechanic'
+                  data:
+                    icon-key: ''
+                    counts: 'True'
+                    material: 'Melon'
+                    amount: 1
+                    data: 0
+                    byte: 0
+                    custom: 'False'
+            Value-o:
+              type: 'condition'
+              data:
+                icon-key: ''
+                key: 'randomFood'
+                min-value-base: 2
+                min-value-scale: 0
+                max-value-base: 3
+                max-value-scale: 0
+              children:
+                Item-p:
+                  type: 'mechanic'
+                  data:
+                    icon-key: ''
+                    counts: 'True'
+                    material: 'Potato Item'
+                    amount: 1
+                    data: 0
+                    byte: 0
+                    custom: 'False'
