@@ -4,7 +4,7 @@ Classes and skills
 Class:
 - No Longer than 13 character name.
 - All Classes must branch out into a 4th level class.
-- Class advancements should be at level 30 then level 70 (level 40 sub class) then level 120 (level 50 sub class)
+- Class advancements should be at level 30 then level 70 (level 40 sub class) then level 120 (level 50 sub class) then final max level is 80 for a total player level of 200
 
 
 Nexus:
