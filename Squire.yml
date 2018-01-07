@@ -2,8 +2,8 @@ Squire:
   name: 'Squire'
   prefix: '&6Squire'
   group: 'class'
-  mana: '&2Mana'
-  max-level: 40
+  mana: '&2Energy'
+  max-level: 30
   parent: ''
   needs-permission: 'False'
   exp-source: 273
@@ -11,6 +11,8 @@ Squire:
   tree: 'Requirement'
   skills:
   - 'Fight Me!'
+  - 'Rest'
+  - ''
   icon: 'Flint'
   icon-data: 0
   icon-lore:

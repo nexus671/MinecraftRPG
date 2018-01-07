@@ -1,0 +1,36 @@
+Cultist:
+  name: 'Cultist'
+  prefix: '&6Class 2'
+  group: 'class'
+  mana: '&2Mana'
+  max-level: 70
+  parent: ''
+  needs-permission: 'False'
+  exp-source: 339
+  mana-regen: 20
+  tree: 'Basic Horizontal'
+  skills:
+  - 'Punish'
+  - 'Erosion'
+  icon: 'Skull'
+  icon-data: 2
+  icon-lore:
+  - '&dClass 1'
+  blacklist:
+  - ''
+  action-bar: ''
+  attributes:
+    health-base: 25
+    health-scale: 2
+    mana-base: 500
+    mana-scale: 10
+    vitality-base: 1
+    vitality-scale: 1
+    spirit-base: 1
+    spirit-scale: 1
+    intelligence-base: 1
+    intelligence-scale: 1
+    dexterity-base: 1
+    dexterity-scale: 1
+    strength-base: 8
+    strength-scale: 2
