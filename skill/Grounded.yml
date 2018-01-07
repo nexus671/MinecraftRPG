@@ -21,8 +21,8 @@ Grounded:
   attributes:
     level-base: 10
     level-scale: 0
-    cost-base: 4  
-    cost-scale: 2
+    cost-base: 3
+    cost-scale: 1
     cooldown-base: 0
     cooldown-scale: 0
     mana-base: 0
@@ -45,127 +45,77 @@ Grounded:
           data:
             icon-key: ''
           children:
-            Crouch-c:
+            Water-c:
               type: 'condition'
               data:
                 icon-key: ''
-                crouch: 'True'
+                state: 'In Water'
               children:
-                Water-d:
-                  type: 'condition'
+                Damage-d:
+                  type: 'mechanic'
                   data:
                     icon-key: ''
-                    state: 'In Water'
-                  children:
-                    Damage-e:
-                      type: 'mechanic'
-                      data:
-                        icon-key: ''
-                        counts: 'False'
-                        type: 'Damage'
-                        value-base: 2
-                        value-scale: 
-                        true: 'True'
-                        classifier: 'default'
-                Water-f:
-                  type: 'condition'
-                  data:
-                    icon-key: ''
-                    state: 'Out Of Water'
-                  children:
-                    Potion-g:
-                      type: 'mechanic'
-                      data:
-                        icon-key: ''
-                        counts: 'True'
-                        potion: 'Damage Resistance'
-                        ambient: 'False'
-                        tier-base: 1
-                        tier-scale: 0
-                        seconds-base: 100000000000
-                        seconds-scale: 0
-            Trigger-h:
-              type: 'mechanic'
+                    counts: 'True'
+                    type: 'Damage'
+                    value-base: 1
+                    value-scale: 0
+                    true: 'True'
+                    classifier: 'default'
+            Water-e:
+              type: 'condition'
               data:
                 icon-key: ''
-                counts: 'True'
-                trigger: 'Crouch'
-                duration-base: 999999999999999
-                duration-scale: 0
-                stackable: 'True'
-                once: 'True'
-                type: 'Stop Crouching'
+                state: 'Out Of Water'
               children:
-                Purge-i:
+                Potion-f:
+                  type: 'mechanic'
+                  data:
+                    icon-key: ''
+                    counts: 'True'
+                    potion: 'Absorption'
+                    ambient: 'False'
+                    tier-base: 1
+                    tier-scale: 1
+                    seconds-base: 999999999
+                    seconds-scale: 0
+            Crouch-g:
+              type: 'condition'
+              data:
+                icon-key: ''
+                crouch: 'False'
+              children:
+                Purge-h:
                   type: 'mechanic'
                   data:
                     icon-key: ''
                     counts: 'True'
                     potion: 'Damage Resistance'
                     status: ''
-
-        type: 'Start Crouching'
-      children:
-        Self-b:
-          type: 'target'
-          data:
-            icon-key: ''
-          children:
-            Crouch-c:
-              type: 'condition'
-              data:
-                icon-key: ''
-                crouch: 'True'
-              children:
-                Water-d:
-                  type: 'condition'
-                  data:
-                    icon-key: ''
-                    state: 'In Water'
-                  children:
-                    Damage-e:
-                      type: 'mechanic'
-                      data:
-                        icon-key: ''
-                        counts: 'False'
-                        type: 'Damage'
-                        value-base: 2
-                        value-scale: 
-                        true: 'True'
-                        classifier: 'default'
-                Water-f:
-                  type: 'condition'
-                  data:
-                    icon-key: ''
-                    state: 'Out Of Water'
-                  children:
-                    Potion-g:
-                      type: 'mechanic'
-                      data:
-                        icon-key: ''
-                        counts: 'True'
-                        potion: 'Damage Resistance'
-                        ambient: 'False'
-                        tier-base: 1
-                        tier-scale: 0
-                        seconds-base: 100000000000
-                        seconds-scale: 0
-            Trigger-h:
-              type: 'mechanic'
-              data:
-                icon-key: ''
-                counts: 'True'
-                trigger: 'Crouch'
-                duration-base: 999999999999999
-                duration-scale: 0
-                stackable: 'True'
-                once: 'False'
-                type: 'Stop Crouching'
-              children:
-                Purge-i:
+                Cancel Effect-i:
                   type: 'mechanic'
                   data:
                     icon-key: ''
                     counts: 'True'
-                    potion: 'Damage Resistance'
-                    status: ''
+                    effect-key: 'default'
+            Particle Effect-j:
+              type: 'mechanic'
+              data:
+                icon-key: ''
+                counts: 'True'
+                effect-key: 'default'
+                duration-base: 99999999
+                duration-scale: 0
+                -shape: 'hexagon'
+                -shape-dir: 'XY'
+                -shape-size: '1'
+                -animation: 'circle'
+                -anim-dir: 'XZ'
+                -anim-size: '1'
+                -interval: 1
+                -view-range: 25
+                -particle-type: 'SMOKE_NORMAL'
+                -particle-amount: 20
+                -particle-dx: 0
+                -particle-dy: 0
+                -particle-dz: 0
+                -particle-speed: 1
