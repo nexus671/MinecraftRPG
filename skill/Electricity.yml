@@ -19,7 +19,8 @@ Electricity:
   - ''
   - '&2Cooldown: {attr:cooldown}'
   - ''
-  - 'This skill buffs the player with speed and strength, however it uses 5 redstone dust to cast on the first level of the skill.'
+  - 'This skill buffs the player'
+  - 'Uses five redstone to cast'
   attributes:
     level-base: 1
     level-scale: 0
