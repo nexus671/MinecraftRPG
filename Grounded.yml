@@ -21,8 +21,8 @@ Grounded:
   attributes:
     level-base: 10
     level-scale: 0
-    cost-base: 3
-    cost-scale: 1
+    cost-base: 4  
+    cost-scale: 2
     cooldown-base: 0
     cooldown-scale: 0
     mana-base: 0
