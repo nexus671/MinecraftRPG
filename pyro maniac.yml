@@ -1,0 +1,36 @@
+pyro maniac:
+  name: 'pyro maniac'
+  prefix: '&6Class 1'
+  group: 'class'
+  mana: '&2Fire'
+  max-level: 40
+  parent: ''
+  needs-permission: 'False'
+  exp-source: 501
+  mana-regen: 20
+  tree: 'Flood'
+  skills:
+  - ''
+  icon: 'Fire'
+  icon-data: 0
+  icon-lore:
+  - '&dClass 1'
+  blacklist:
+  - 'Ice'
+  - 'water_Bucket'
+  action-bar: ''
+  attributes:
+    health-base: 40
+    health-scale: 2
+    mana-base: 300
+    mana-scale: 10
+    vitality-base: 2
+    vitality-scale: 1
+    spirit-base: 2
+    spirit-scale: 1
+    intelligence-base: 2
+    intelligence-scale: 1
+    dexterity-base: 2
+    dexterity-scale: 1
+    strength-base: 2
+    strength-scale: 1
