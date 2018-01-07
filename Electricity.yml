@@ -1,0 +1,116 @@
+Electricity:
+  name: 'Electricity'
+  type: 'Self-Buff'
+  max-level: 5
+  skill-req: ''
+  skill-req-lvl: 1
+  needs-permission: 'False'
+  msg: '&6{player} &6has cast &e{skill}'
+  combo: ''
+  indicator: '2D'
+  icon: 'Redstone'
+  icon-data: 0
+  icon-lore:
+  - '&d{name} &7({level}/{max})'
+  - '&2Type: &6{type}'
+  - ''
+  - '{req:level}Level: {attr:level}'
+  - '{req:cost}Cost: {attr:cost}'
+  - ''
+  - '&2Cooldown: {attr:cooldown}'
+  - ''
+  - 'This skill buffs the player with speed and strength, however it uses 5 redstone dust to cast on the first level of the skill.'
+  attributes:
+    level-base: 1
+    level-scale: 0
+    cost-base: 1
+    cost-scale: 1
+    cooldown-base: 5
+    cooldown-scale: 1
+    mana-base: 0
+    mana-scale: 0
+    points-spent-req-base: 0
+    points-spent-req-scale: 0
+    incompatible:
+    - ''
+  components:
+    Cast-a:
+      type: 'trigger'
+      data:
+        icon-key: ''
+      children:
+        Self-b:
+          type: 'target'
+          data:
+            icon-key: ''
+          children:
+            Inventory-c:
+              type: 'condition'
+              data:
+                icon-key: ''
+                amount-base: 5
+                amount-scale: 1
+                check-mat: 'True'
+                material: 'Redstone'
+                check-data: 'False'
+                check-lore: 'False'
+                check-name: 'False'
+                regex: 'False'
+              children:
+                Item Remove-d:
+                  type: 'mechanic'
+                  data:
+                    icon-key: ''
+                    counts: 'True'
+                    amount-base: 5
+                    amount-scale: 1
+                    check-mat: 'True'
+                    material: 'Redstone'
+                    check-data: 'False'
+                    check-lore: 'False'
+                    check-name: 'False'
+                    regex: 'False'
+                Potion-e:
+                  type: 'mechanic'
+                  data:
+                    icon-key: ''
+                    counts: 'True'
+                    potion: 'Increase Damage'
+                    ambient: 'False'
+                    tier-base: 1
+                    tier-scale: 0
+                    seconds-base: 3
+                    seconds-scale: 1
+                Potion-f:
+                  type: 'mechanic'
+                  data:
+                    icon-key: ''
+                    counts: 'True'
+                    potion: 'Speed'
+                    ambient: 'False'
+                    tier-base: 1
+                    tier-scale: 0
+                    seconds-base: 3
+                    seconds-scale: 1
+                Particle Effect-g:
+                  type: 'mechanic'
+                  data:
+                    icon-key: ''
+                    counts: 'True'
+                    effect-key: 'Electricity'
+                    duration-base: 3
+                    duration-scale: 1
+                    -shape: 'hexagon'
+                    -shape-dir: 'XZ'
+                    -shape-size: '1'
+                    -animation: 'circle'
+                    -anim-dir: 'XZ'
+                    -anim-size: '1'
+                    -interval: 1
+                    -view-range: 25
+                    -particle-type: 'SMOKE_NORMAL'
+                    -particle-amount: 20
+                    -particle-dx: 0
+                    -particle-dy: 0
+                    -particle-dz: 0
+                    -particle-speed: 1
