@@ -1,0 +1,35 @@
+Shadower:
+  name: 'Shadower'
+  prefix: '&6Shadower'
+  group: 'class'
+  mana: '&2Mana'
+  max-level: 80
+  parent: 'Thief'
+  needs-permission: 'False'
+  exp-source: 273
+  mana-regen: 1
+  tree: 'Requirement'
+  skills:
+  - ''
+  icon: 'Jack O Lantern'
+  icon-data: 0
+  icon-lore:
+  - '&dClass 1'
+  blacklist:
+  - ''
+  action-bar: ''
+  attributes:
+    health-base: 20
+    health-scale: 0
+    mana-base: 20
+    mana-scale: 0
+    vitality-base: 0
+    vitality-scale: 0
+    spirit-base: 0
+    spirit-scale: 0
+    intelligence-base: 0
+    intelligence-scale: 0
+    dexterity-base: 0
+    dexterity-scale: 0
+    strength-base: 0
+    strength-scale: 0

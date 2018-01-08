@@ -1,10 +1,10 @@
-Squire:
-  name: 'Squire'
-  prefix: '&6Squire'
+Page:
+  name: 'Page'
+  prefix: '&6Page'
   group: 'class'
   mana: '&2Energy'
   max-level: 30
-  parent: ''
+  parent: 'Swordman'
   needs-permission: 'False'
   exp-source: 273
   mana-regen: 1
