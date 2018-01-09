@@ -19,7 +19,7 @@ Ranger:
   - ''
   action-bar: ''
   attributes:
-    health-base: 20
+    health-base: 13
     health-scale: 0
     mana-base: 20
     mana-scale: 0

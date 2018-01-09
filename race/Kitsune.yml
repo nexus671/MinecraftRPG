@@ -2,8 +2,8 @@ Kitsune:
   name: 'Kitsune'
   prefix: '&6Kitsune'
   group: 'race'
-  mana: '&2Mana'
-  max-level: 40
+  mana: ''
+  max-level: 200
   parent: ''
   needs-permission: 'False'
   exp-source: 273
@@ -11,25 +11,27 @@ Kitsune:
   tree: 'Requirement'
   skills:
   - ''
-  icon: 'Jack O Lantern'
+  icon: 'Portal'
   icon-data: 0
   icon-lore:
   - '&dClass 1'
+  - ''
+  - 'Vulpine shapeshifters known for their love of both trickery and art. Kitsune possess two forms: that of an attractive human of slender build with salient eyes, and their true form of an anthropomorphic fox. '
   blacklist:
   - ''
   action-bar: ''
   attributes:
-    health-base: 20
+    health-base: 5
     health-scale: 0
-    mana-base: 20
+    mana-base: 5
     mana-scale: 0
-    vitality-base: 0
+    vitality-base: 2
     vitality-scale: 0
-    spirit-base: 0
+    spirit-base: 6
     spirit-scale: 0
-    intelligence-base: 0
+    intelligence-base: 5
     intelligence-scale: 0
-    dexterity-base: 0
+    dexterity-base: 6
     dexterity-scale: 0
-    strength-base: 0
+    strength-base: 2
     strength-scale: 0

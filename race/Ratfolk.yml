@@ -1,9 +1,9 @@
 Ratfolk:
   name: 'Ratfolk'
   prefix: '&6Ratfolk'
-  group: 'class'
-  mana: '&2Mana'
-  max-level: 40
+  group: 'race'
+  mana: ''
+  max-level: 200
   parent: ''
   needs-permission: 'False'
   exp-source: 273
@@ -11,25 +11,27 @@ Ratfolk:
   tree: 'Requirement'
   skills:
   - ''
-  icon: 'Jack O Lantern'
+  icon: 'Portal'
   icon-data: 0
   icon-lore:
-  - '&dClass 1'
+  - '&dRatfolk'
+  - ''
+  - 'Ratfolk are tinkerers and hoarders by nature, and as a whole are masters of commerce, especially when it comes to acquiring and repairing mechanical or magical devices.'
   blacklist:
   - ''
   action-bar: ''
   attributes:
-    health-base: 20
+    health-base: 5
     health-scale: 0
-    mana-base: 20
+    mana-base: 5
     mana-scale: 0
-    vitality-base: 0
+    vitality-base: 3
     vitality-scale: 0
-    spirit-base: 0
+    spirit-base: 4
     spirit-scale: 0
-    intelligence-base: 0
+    intelligence-base: 7
     intelligence-scale: 0
-    dexterity-base: 0
+    dexterity-base: 7
     dexterity-scale: 0
-    strength-base: 0
+    strength-base: 1
     strength-scale: 0

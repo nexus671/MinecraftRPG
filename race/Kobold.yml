@@ -2,8 +2,8 @@ Kobold:
   name: 'Kobold'
   prefix: '&6Kobold'
   group: 'race'
-  mana: '&2Mana'
-  max-level: 40
+  mana: ''
+  max-level: 200
   parent: ''
   needs-permission: 'False'
   exp-source: 273
@@ -11,25 +11,27 @@ Kobold:
   tree: 'Requirement'
   skills:
   - ''
-  icon: 'Jack O Lantern'
+  icon: 'Portal'
   icon-data: 0
   icon-lore:
-  - '&dClass 1'
+  - '&dKobold'
+  - ''
+  - 'Kobolds are small, bipedal reptilian humanoids. Most stand around 3 feet tall and weigh about 35 pounds. '
   blacklist:
   - ''
   action-bar: ''
   attributes:
-    health-base: 20
+    health-base: 5
     health-scale: 0
-    mana-base: 20
+    mana-base: 5
     mana-scale: 0
-    vitality-base: 0
+    vitality-base: 3
     vitality-scale: 0
-    spirit-base: 0
+    spirit-base: 5
     spirit-scale: 0
-    intelligence-base: 0
+    intelligence-base: 5
     intelligence-scale: 0
-    dexterity-base: 0
+    dexterity-base: 6
     dexterity-scale: 0
-    strength-base: 0
+    strength-base: 3
     strength-scale: 0

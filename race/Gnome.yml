@@ -2,8 +2,8 @@ Gnome:
   name: 'Gnome'
   prefix: '&6Gnome'
   group: 'race'
-  mana: '&2Mana'
-  max-level: 40
+  mana: ''
+  max-level: 200
   parent: ''
   needs-permission: 'False'
   exp-source: 273
@@ -11,25 +11,27 @@ Gnome:
   tree: 'Requirement'
   skills:
   - ''
-  icon: 'Jack O Lantern'
+  icon: 'Portal'
   icon-data: 0
   icon-lore:
-  - '&dClass 1'
+  - '&dGnome'
+  - ''
+  - 'Many gnomes are whimsical artisans and tinkers, creating strange devices powered by magic, alchemy, and their quirky imagination. '
   blacklist:
   - ''
   action-bar: ''
   attributes:
-    health-base: 20
+    health-base: 5
     health-scale: 0
-    mana-base: 20
+    mana-base: 5
     mana-scale: 0
-    vitality-base: 0
+    vitality-base: 3
     vitality-scale: 0
-    spirit-base: 0
+    spirit-base: 7
     spirit-scale: 0
-    intelligence-base: 0
+    intelligence-base: 6
     intelligence-scale: 0
-    dexterity-base: 0
+    dexterity-base: 4
     dexterity-scale: 0
-    strength-base: 0
+    strength-base: 4
     strength-scale: 0

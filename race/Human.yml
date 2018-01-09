@@ -2,8 +2,8 @@ Human:
   name: 'Human'
   prefix: '&6Human'
   group: 'race'
-  mana: '&2Mana'
-  max-level: 40
+  mana: ''
+  max-level: 200
   parent: ''
   needs-permission: 'False'
   exp-source: 273
@@ -11,25 +11,27 @@ Human:
   tree: 'Requirement'
   skills:
   - ''
-  icon: 'Jack O Lantern'
+  icon: 'Portal'
   icon-data: 0
   icon-lore:
-  - '&dClass 1'
+  - '&dHuman'
+  - ''
+  - 'Ambitious, sometimes heroic, and always confident, humans have an ability to work together toward common goals that makes them a force to be reckoned with.'
   blacklist:
   - ''
   action-bar: ''
   attributes:
-    health-base: 20
+    health-base: 5
     health-scale: 0
-    mana-base: 20
+    mana-base: 5
     mana-scale: 0
-    vitality-base: 0
+    vitality-base: 5
     vitality-scale: 0
-    spirit-base: 0
+    spirit-base: 5
     spirit-scale: 0
-    intelligence-base: 0
+    intelligence-base: 4
     intelligence-scale: 0
-    dexterity-base: 0
+    dexterity-base: 5
     dexterity-scale: 0
-    strength-base: 0
+    strength-base: 5
     strength-scale: 0
