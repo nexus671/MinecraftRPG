@@ -10,7 +10,9 @@ Kobold:
   mana-regen: 1
   tree: 'Requirement'
   skills:
-  - ''
+  - 'Dragonic scales'
+  - 'Darkvision'
+  - 'Fireborn'
   icon: 'Portal'
   icon-data: 0
   icon-lore:
