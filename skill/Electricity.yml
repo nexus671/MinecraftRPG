@@ -55,7 +55,8 @@ Electricity:
                 material: 'Redstone'
                 check-data: 'False'
                 check-lore: 'False'
-                check-name: 'False'
+                check-name: 'True'
+                name: 'Redstone'
                 regex: 'False'
               children:
                 Item Remove-d:
@@ -69,7 +70,8 @@ Electricity:
                     material: 'Redstone'
                     check-data: 'False'
                     check-lore: 'False'
-                    check-name: 'False'
+                    check-name: 'True'
+                    name: 'Redstone'
                     regex: 'False'
                 Potion-e:
                   type: 'mechanic'
